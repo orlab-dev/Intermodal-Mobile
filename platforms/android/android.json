@@ -1,0 +1,173 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.USE_CREDENTIALS\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<permission android:name=\"io.cordova.hellocordovastarter.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"io.cordova.hellocordovastarter.permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application/activity": [
+                        {
+                            "xml": "<intent-filter><action android:name=\"io.cordova.hellocordovastarter.IBMPushNotification\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:name=\"com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushIntentService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.ibm.mobilefirstplatform.clientsdk.android.push.internal.MFPPushBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"io.cordova.hellocordovastarter\" /></intent-filter><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><category android:name=\"io.cordova.hellocordovastarter\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BMSClient\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSClient\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSRequest\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSRequest\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSLogger\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAnalytics\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAnalytics\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAuthorizationManager\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAuthorizationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAuthenticationContext\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAuthenticationContext\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSPushClient\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.push.CDVBMSPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-cocoapod-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "bms-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "bms-push": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "bms-core.BMSClient",
+            "file": "plugins/bms-core/www/BMSClient.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSClient"
+            ]
+        },
+        {
+            "id": "bms-core.BMSRequest",
+            "file": "plugins/bms-core/www/BMSRequest.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSRequest"
+            ]
+        },
+        {
+            "id": "bms-core.BMSLogger",
+            "file": "plugins/bms-core/www/BMSLogger.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSLogger"
+            ]
+        },
+        {
+            "id": "bms-core.BMSAnalytics",
+            "file": "plugins/bms-core/www/BMSAnalytics.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSAnalytics"
+            ]
+        },
+        {
+            "id": "bms-core.BMSAuthorizationManager",
+            "file": "plugins/bms-core/www/BMSAuthorizationManager.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSAuthorizationManager"
+            ]
+        },
+        {
+            "id": "bms-push.BMSPush",
+            "file": "plugins/bms-push/www/BMSPush.js",
+            "pluginId": "bms-push",
+            "clobbers": [
+                "BMSPush"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-cocoapod-support": "1.2.10",
+        "cordova-plugin-add-swift-support": "1.6.0",
+        "bms-core": "2.3.6",
+        "bms-push": "2.0.7"
+    }
+}

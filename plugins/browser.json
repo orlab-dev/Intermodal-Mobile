@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "bms-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "bms-push": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-cocoapod-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        }
+    }
+}

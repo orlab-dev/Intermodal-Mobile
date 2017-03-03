@@ -1,0 +1,115 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BMSClient\"><param name=\"ios-package\" value=\"CDVBMSClient\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSRequest\"><param name=\"ios-package\" value=\"CDVBMSRequest\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSLogger\"><param name=\"ios-package\" value=\"CDVBMSLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAnalytics\"><param name=\"ios-package\" value=\"CDVBMSAnalytics\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAuthorizationManager\"><param name=\"ios-package\" value=\"CDVBMSAuthorizationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSAuthenticationContext\"><param name=\"ios-package\" value=\"CDVBMSAuthenticationContext\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSPushClient\"><param name=\"ios-package\" value=\"CDVBMSPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-cocoapod-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "bms-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        },
+        "bms-push": {
+            "PACKAGE_NAME": "io.cordova.hellocordovastarter"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "bms-core.BMSClient",
+            "file": "plugins/bms-core/www/BMSClient.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSClient"
+            ]
+        },
+        {
+            "id": "bms-core.BMSRequest",
+            "file": "plugins/bms-core/www/BMSRequest.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSRequest"
+            ]
+        },
+        {
+            "id": "bms-core.BMSLogger",
+            "file": "plugins/bms-core/www/BMSLogger.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSLogger"
+            ]
+        },
+        {
+            "id": "bms-core.BMSAnalytics",
+            "file": "plugins/bms-core/www/BMSAnalytics.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSAnalytics"
+            ]
+        },
+        {
+            "id": "bms-core.BMSAuthorizationManager",
+            "file": "plugins/bms-core/www/BMSAuthorizationManager.js",
+            "pluginId": "bms-core",
+            "clobbers": [
+                "BMSAuthorizationManager"
+            ]
+        },
+        {
+            "id": "bms-push.BMSPush",
+            "file": "plugins/bms-push/www/BMSPush.js",
+            "pluginId": "bms-push",
+            "clobbers": [
+                "BMSPush"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-cocoapod-support": "1.2.10",
+        "cordova-plugin-add-swift-support": "1.6.0",
+        "bms-core": "2.3.6",
+        "bms-push": "2.0.7"
+    }
+}

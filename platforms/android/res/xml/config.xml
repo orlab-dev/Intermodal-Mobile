@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordovastarter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="BMSClient">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSClient" />
+    </feature>
+    <feature name="BMSRequest">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSRequest" />
+    </feature>
+    <feature name="BMSLogger">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSLogger" />
+    </feature>
+    <feature name="BMSAnalytics">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAnalytics" />
+    </feature>
+    <feature name="BMSAuthorizationManager">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAuthorizationManager" />
+    </feature>
+    <feature name="BMSAuthenticationContext">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSAuthenticationContext" />
+    </feature>
+    <feature name="BMSPushClient">
+        <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.push.CDVBMSPush" />
+    </feature>
+    <name>IntermodalNotifier</name>
+    <description>
+        A sample Apache Cordova starter application.
+    </description>
+    <author>IBM</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-minSdkVersion" value="15" />
+</widget>

@@ -1,0 +1,34 @@
+{
+    "cordova-plugin-cocoapod-support": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-cocoapod-support"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-add-swift-support": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-add-swift-support"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "bms-core": {
+        "source": {
+            "type": "registry",
+            "id": "bms-core"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "bms-push": {
+        "source": {
+            "type": "registry",
+            "id": "bms-push"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

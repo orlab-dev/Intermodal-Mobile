@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+target 'IntermodalNotifier' do
+    pod 'BMSCore', '~> 2.0'
+    pod 'BMSPush', '~> 2.0'
+	pod 'BMSAnalytics', '~>2.0'
+	pod 'BMSSecurity', '~>2.0'
+	pod 'BMSCore', '>=2.0.0'
+	pod 'BMSPush', '>=2.0.0'
+end

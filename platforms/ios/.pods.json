@@ -1,0 +1,22 @@
+{
+	"pods": {
+		"BMSAnalytics": {
+			"id": "BMSAnalytics",
+			"version": "~>2.0"
+		},
+		"BMSSecurity": {
+			"id": "BMSSecurity",
+			"version": "~>2.0"
+		},
+		"BMSCore": {
+			"id": "BMSCore",
+			"version": ">=2.0.0"
+		},
+		"BMSPush": {
+			"id": "BMSPush",
+			"version": ">=2.0.0"
+		}
+	},
+	"iosMinVersion": "8.0",
+	"useFrameworks": true
+}

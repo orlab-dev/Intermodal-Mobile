@@ -1,0 +1,27 @@
+PODS:
+  - BMSAnalytics (2.1.1):
+    - BMSCore (~> 2.1)
+  - BMSAnalyticsAPI (2.1.2)
+  - BMSCore (2.1.1):
+    - BMSAnalyticsAPI (~> 2.1)
+  - BMSPush (2.0.2):
+    - BMSCore (~> 2.0)
+  - BMSSecurity (2.0.4):
+    - BMSCore (~> 2.0)
+
+DEPENDENCIES:
+  - BMSAnalytics (~> 2.0)
+  - BMSCore (>= 2.0.0)
+  - BMSPush (>= 2.0.0)
+  - BMSSecurity (~> 2.0)
+
+SPEC CHECKSUMS:
+  BMSAnalytics: c605cabfc7aba58cc74f1c74c4e167543a5de742
+  BMSAnalyticsAPI: 23fa72ee364ec4a73598792895ee98283be0a1ca
+  BMSCore: 309474c932531eb0f95ca012c89d6eee3ac3f041
+  BMSPush: 9434044c0086ea577cc8797448e722edf7386300
+  BMSSecurity: 369009ed2dbf54b0094359fe5c238ed964f0cd57
+
+PODFILE CHECKSUM: 4d0e87baccc702867f19f4aeb32515a7057f150e
+
+COCOAPODS: 1.1.1
